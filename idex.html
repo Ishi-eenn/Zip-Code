@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>住所検索</title>
+</head>
+<body>
+  <h1>検索</h1>
+  <div id="main">
+    <p>郵便局番号<input id="zipcode" type="text" oninput="value = value.replace(/[^0-9]+/i,'');" maxlength="8"><button id="button">検索</button></p>
+    <label>都道府県<input id="prefecture" type="text"></label>
+    <label>市区町村<input id="city" type="text"></label>
+    <label>住所<input id="address" type="text"></label>
+  </div>
+  <div id="footer">
+    <a href="https://zipcloud.ibsnet.co.jp/">使用したAPI</a>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
